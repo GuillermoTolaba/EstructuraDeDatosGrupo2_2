@@ -53,11 +53,11 @@ public class PuntoSeis {
 		
 		try
 		{
-			long n = scanner.nextLong();
-			System.out.println((SumDiv(n)-n) == n ? "Es número perfecto." : "No es número perfecto");
+			long n = Long.parseLong(scanner.next());
+			System.out.println((SumDiv(n)-n) == n ? "Es nÃºmero perfecto." : "No es nÃºmero perfecto");
 		}
 		catch (Exception e) {
-			System.out.println("Se introdujo un número inválido, reintente.");
+			System.out.println("Se introdujo un nÃºmero invÃ¡lido, reintente.");
 			main(args);
 		}
 
